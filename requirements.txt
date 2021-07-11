@@ -1,5 +1,5 @@
 pandas
 nltk
-regex
+re2
 string
 sklearn
