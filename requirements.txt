@@ -1,5 +1,4 @@
 pandas
 nltk
-re2
-string
+re
 sklearn
