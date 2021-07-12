@@ -61,7 +61,7 @@ if nav == "Analyise":
             image = Image.open("happy.jpeg")
             st.image(image,width = 250)
             st.header("WOW!! That's Positive review")
-        else:
+        elif(y_out == "Negative"):
             image = Image.open("sad.jpeg")
             st.image(image,width = 250)
             st.header("That's Negative review")
