@@ -1,8 +1,5 @@
 import streamlit as st
 from PIL import Image
-import os
-import matplotlib.pyplot as plt
-import numpy as np
 import nltk
 import re
 import string
