@@ -22,7 +22,7 @@ model = pickle.load(open('SentimentAnalysis.p','rb'))
 
 st.title("Sentiment Analysis")
 
-nav = st.sidebar.radio("Navigation",["Home", "Prediction"])
+nav = st.sidebar.radio("Navigation",["Home", "Analyise"])
 
 if nav == "Home":
     image = Image.open("image.jpeg")
@@ -57,8 +57,7 @@ if nav == "Prediction":
     text = [text]
     y_out = model.predict(text)
 
-    if st.button("Predict"):
-
+    if st.button("Analyise"):
 
         if (y_out == "Positive"):
             image = Image.open("happy.jpeg")
