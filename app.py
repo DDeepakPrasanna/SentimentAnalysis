@@ -25,7 +25,7 @@ st.title("Sentiment Analysis")
 nav = st.sidebar.radio("Navigation",["Home", "Prediction"])
 
 if nav == "Home":
-    image = Image.open(r"C:\Users\D Deepak Prasanna\Desktop\class\Internship\Major Project\image.jpeg")
+    image = Image.open("image.jpeg")
     st.image(image,width = 400)
     st.write("Opinion information is very important for businesses and manufacturers. They often want to know in time what consumers and the public  think of their products and services. However, it is not realistic to manually read every post on the website and extract useful viewpoint information from it. If you do it manually, there is too much data. Sentiment analysis allows large-scale processing of data in an efficient and cost-effective manner. This project used a dataset of the Amazon reviews and then built a model to predict the sentiment of the comment given the comment declaration by using Python and machine learning algorithm- Naïve Bayes.")
 if nav == "Prediction":
@@ -61,10 +61,10 @@ if nav == "Prediction":
 
 
         if (y_out == "Positive"):
-            image = Image.open(r"C:\Users\D Deepak Prasanna\Desktop\class\Internship\Major Project\happy.jpeg")
+            image = Image.open("happy.jpeg")
             st.image(image,width = 250)
             st.header(y_out)
         else:
-            image = Image.open(r"C:\Users\D Deepak Prasanna\Desktop\class\Internship\Major Project\sad.jpeg")
+            image = Image.open("sad.jpeg")
             st.image(image,width = 250)
             st.header(y_out)
