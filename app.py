@@ -1,11 +1,7 @@
 import streamlit as st
 from PIL import Image
-import os
-import matplotlib.pyplot as plt
-import numpy as np
 import nltk
 import re
-import string
 import pickle
 from nltk.tokenize.toktok import ToktokTokenizer
 from sklearn.feature_extraction.text import TfidfTransformer
