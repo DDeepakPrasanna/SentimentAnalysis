@@ -29,7 +29,7 @@ if nav == "Analyise":
     st.title("Sentiment Analysis")
     st.subheader("Enter Text to analyise: ")
     text = st.text_input(" ")
-    st.write("Please click Enter after typing the text and then proceed to click Predict button")
+    st.write("Note: For accurate Prediction, please enter minimum of 10-20 words as model is trained with such reviews.Please click Enter after typing the text and then proceed to click Predict button")
 
     def remove_sp(text):
             text = text.lower()
