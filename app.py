@@ -9,12 +9,8 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from nltk.tokenize.toktok import ToktokTokenizer
-tokenizer = ToktokTokenizer()
 import nltk
-nltk.download('stopwords')
-stopwords_list = nltk.corpus.stopwords.words('english')
-stopwords_list.remove('no')
-stopwords_list.remove('not')
+
 model = pickle.load(open('SentimentAnalysis.p','rb'))
 
 
