@@ -31,26 +31,6 @@ if nav == "Analyise":
     text = st.text_input(" ")
     st.write("Note: For accurate Prediction, please enter minimum of 10-20 words as model is trained with such reviews.Please click Enter after typing the text and then proceed to click Predict button")
 
-    def remove_sp(text):
-            text = text.lower()
-            text = re.sub('\[.*?\]',"",text)
-            text = re.sub('[%s]' %re.escape(string.punctuation), "", text)
-            text = re.sub('\w*\d\w',"",text)
-            text = re.sub('[''""_]', "", text)
-            text = re.sub('\n',"", text)
-            return text
-
-        #remove stopwords
-    def remove_stopwords(text):
-      tokens = tokenizer.tokenize(text)
-      tokens = [token.strip() for token in tokens]
-      filtered_tokens = [token for token in tokens if token not in stopwords_list]
-      filtered_text = ' '.join(filtered_tokens)
-      return filtered_text
-
-    text = text.lower()
-    text = remove_sp(text)
-    text = remove_stopwords(text)
     st.write('Text after proceesing: ',text)
     text = [text]
     y_out = model.predict(text)
